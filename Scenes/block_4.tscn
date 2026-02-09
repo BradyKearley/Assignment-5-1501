@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bqxgeete5ykbu"]
 
-[ext_resource type="Script" uid="uid://d3u7pgcympdx3" path="res://bloock.gd" id="1_3c4gj"]
+[ext_resource type="Script" uid="uid://d3u7pgcympdx3" path="res://Scripts/bloock.gd" id="1_3c4gj"]
 [ext_resource type="Texture2D" uid="uid://gttus7qdfksx" path="res://assets/images/2.png" id="2_oh62i"]
 
 [node name="Block4" type="Node2D" unique_id=1511633279]

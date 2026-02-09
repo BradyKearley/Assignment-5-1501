@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://bwfkeicaboxmb"]
+
+[ext_resource type="Script" uid="uid://bwse5h6aqc47q" path="res://box_spawner.gd" id="1_0x5gj"]
+
+[node name="BoxSpawner" type="Node2D" unique_id=1873429057]
+script = ExtResource("1_0x5gj")
+
+[node name="Timer" type="Timer" parent="." unique_id=921816903]
+wait_time = 5.0
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

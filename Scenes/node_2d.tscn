@@ -2,11 +2,12 @@
 
 [ext_resource type="PackedScene" uid="uid://dhkqx62hiblem" path="res://Scenes/block_1.tscn" id="1_j2wod"]
 [ext_resource type="PackedScene" uid="uid://by3kjth04r8ya" path="res://Scenes/block_2.tscn" id="2_v1qfn"]
-[ext_resource type="PackedScene" uid="uid://bofjud0vp8tu5" path="res://block_3.tscn" id="3_hh5uf"]
-[ext_resource type="PackedScene" uid="uid://bqxgeete5ykbu" path="res://block_4.tscn" id="4_6whob"]
-[ext_resource type="PackedScene" uid="uid://b8n1a1gng468l" path="res://block_5.tscn" id="5_u7krg"]
-[ext_resource type="PackedScene" uid="uid://bodhuqqjrrx5v" path="res://block_6.tscn" id="6_tx0tn"]
-[ext_resource type="PackedScene" uid="uid://wrqqj0etllwt" path="res://block_7.tscn" id="7_wjtap"]
+[ext_resource type="PackedScene" uid="uid://bofjud0vp8tu5" path="res://Scenes/block_3.tscn" id="3_hh5uf"]
+[ext_resource type="PackedScene" uid="uid://bqxgeete5ykbu" path="res://Scenes/block_4.tscn" id="4_6whob"]
+[ext_resource type="PackedScene" uid="uid://b8n1a1gng468l" path="res://Scenes/block_5.tscn" id="5_u7krg"]
+[ext_resource type="PackedScene" uid="uid://bodhuqqjrrx5v" path="res://Scenes/block_6.tscn" id="6_tx0tn"]
+[ext_resource type="PackedScene" uid="uid://wrqqj0etllwt" path="res://Scenes/block_7.tscn" id="7_wjtap"]
+[ext_resource type="PackedScene" uid="uid://bwfkeicaboxmb" path="res://box_spawner.tscn" id="8_boxsp"]
 
 [node name="Node2D" type="Node2D" unique_id=1069799274]
 
@@ -33,3 +34,8 @@ position = Vector2(213, 57)
 [node name="Block7" parent="." unique_id=1270037760 instance=ExtResource("7_wjtap")]
 position = Vector2(359, 120)
 offset = Vector2(24, 12)
+
+[node name="BoxSpawner" parent="." unique_id=1043962105 instance=ExtResource("8_boxsp")]
+
+[node name="BoxSpawner2" parent="." unique_id=1873429057 instance=ExtResource("8_boxsp")]
+position = Vector2(380, 33)
