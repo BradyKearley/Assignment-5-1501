@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://by3a0uprvndrj"]
+
+[ext_resource type="PackedScene" uid="uid://dhkqx62hiblem" path="res://Scenes/block_1.tscn" id="1_j2wod"]
+[ext_resource type="PackedScene" uid="uid://by3kjth04r8ya" path="res://Scenes/block_2.tscn" id="2_v1qfn"]
+[ext_resource type="PackedScene" uid="uid://bofjud0vp8tu5" path="res://block_3.tscn" id="3_hh5uf"]
+[ext_resource type="PackedScene" uid="uid://bqxgeete5ykbu" path="res://block_4.tscn" id="4_6whob"]
+[ext_resource type="PackedScene" uid="uid://b8n1a1gng468l" path="res://block_5.tscn" id="5_u7krg"]
+[ext_resource type="PackedScene" uid="uid://bodhuqqjrrx5v" path="res://block_6.tscn" id="6_tx0tn"]
+[ext_resource type="PackedScene" uid="uid://wrqqj0etllwt" path="res://block_7.tscn" id="7_wjtap"]
+
+[node name="Node2D" type="Node2D" unique_id=1069799274]
+
+[node name="Block3" parent="." unique_id=1511633279 instance=ExtResource("3_hh5uf")]
+position = Vector2(303, 78)
+offset = Vector2(24, 12)
+
+[node name="Block1" parent="." unique_id=1907850551 instance=ExtResource("1_j2wod")]
+position = Vector2(147, 120)
+
+[node name="Block2" parent="." unique_id=1115519866 instance=ExtResource("2_v1qfn")]
+position = Vector2(267, 128)
+offset = Vector2(24, 12)
+
+[node name="Block4" parent="." unique_id=1330018230 instance=ExtResource("4_6whob")]
+position = Vector2(150, 89)
+
+[node name="Block5" parent="." unique_id=1322909635 instance=ExtResource("5_u7krg")]
+position = Vector2(90, 59)
+
+[node name="Block6" parent="." unique_id=1729798974 instance=ExtResource("6_tx0tn")]
+position = Vector2(213, 57)
+
+[node name="Block7" parent="." unique_id=1270037760 instance=ExtResource("7_wjtap")]
+position = Vector2(359, 120)
+offset = Vector2(24, 12)

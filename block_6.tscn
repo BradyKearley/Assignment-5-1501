@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://bodhuqqjrrx5v"]
+
+[ext_resource type="Script" uid="uid://d3u7pgcympdx3" path="res://bloock.gd" id="1_uyl4v"]
+[ext_resource type="Texture2D" uid="uid://cmsv0i0d8mniq" path="res://assets/images/7.png" id="2_g7wag"]
+
+[node name="Block6" type="Node2D" unique_id=1511633279]
+script = ExtResource("1_uyl4v")
+offset = Vector2(24, 12)
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1637289280]
+position = Vector2(-24, -24)
+texture = ExtResource("2_g7wag")
+
+[node name="Area2D" type="Area2D" parent="Sprite2D" unique_id=1504404681]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Sprite2D/Area2D" unique_id=2072246447]
+polygon = PackedVector2Array(-24, -24, -24, 24, 24, 24, 24, -24)
+
+[connection signal="mouse_entered" from="Sprite2D/Area2D" to="." method="_on_area_2d_mouse_entered"]
+[connection signal="mouse_exited" from="Sprite2D/Area2D" to="." method="_on_area_2d_mouse_exited"]
