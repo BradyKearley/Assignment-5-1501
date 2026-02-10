@@ -36,6 +36,7 @@ position = Vector2(566, 297)
 
 [node name="Block3" parent="." unique_id=534161045 instance=ExtResource("3_hh5uf")]
 position = Vector2(645, 304)
+offset = Vector2(36, 0)
 
 [node name="Block2" parent="." unique_id=968838334 instance=ExtResource("2_v1qfn")]
 position = Vector2(431, 299)
