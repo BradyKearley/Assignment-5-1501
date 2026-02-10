@@ -16,7 +16,7 @@ texture = ExtResource("2_8r0hq")
 [node name="Area2D" type="Area2D" parent="Sprite2D" unique_id=1504404681]
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Sprite2D/Area2D" unique_id=1832829256]
-polygon = PackedVector2Array(12, -24, -12, -24, -12, 0, -36, 0, -36, 24, 36, 24, 36, 0, 12, 0)
+polygon = PackedVector2Array(11, -23, -11, -23, -11, 1, -35, 1, -35, 23, 35, 23, 35, 1, 11, 1)
 
 [node name="Heavy" type="AudioStreamPlayer2D" parent="." unique_id=1342837488]
 stream = ExtResource("3_otrf5")
