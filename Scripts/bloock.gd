@@ -4,6 +4,11 @@ var mouseHover:bool = false
 @export var offset: Vector2
 
 func _process(delta: float) -> void:
+	#Deletes blocks off screen
+	if global_position.y > 750:
+		queue_free()
+	
+	#This code basicaly makes snapping work on all blocks was a huge pain with rotations and everything but it works
 	if Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT) and mouseHover:
 		var rotated_offset = offset.rotated(rotation)
 		var addition_offset = Vector2(0,0)

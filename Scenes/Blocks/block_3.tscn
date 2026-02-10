@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://d3u7pgcympdx3" path="res://Scripts/bloock.gd" id="1_gegon"]
 [ext_resource type="Texture2D" uid="uid://bw1b3me0dyg0h" path="res://assets/images/4.png" id="2_8r0hq"]
 
-[node name="Block3" type="Node2D" unique_id=1511633279]
+[node name="Block3" type="Node2D" unique_id=1511633279 groups=["Block"]]
 script = ExtResource("1_gegon")
 offset = Vector2(36, 24)
 

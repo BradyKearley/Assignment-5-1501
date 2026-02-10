@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://bt3ljuscnb7j5"]
+
+[ext_resource type="Script" uid="uid://booboxcotcga6" path="res://conveyer.gd" id="1_doyy2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_36k7w"]
+size = Vector2(30, 20)
+
+[sub_resource type="BoxMesh" id="BoxMesh_v10e2"]
+
+[node name="Conveyer" type="Area2D" unique_id=590312361]
+script = ExtResource("1_doyy2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1734370272]
+position = Vector2(15, 10)
+shape = SubResource("RectangleShape2D_36k7w")
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="." unique_id=1443908738]
+position = Vector2(15.000008, 10.000004)
+scale = Vector2(30, 20.000002)
+mesh = SubResource("BoxMesh_v10e2")

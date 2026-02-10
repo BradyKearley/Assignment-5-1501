@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://d3u7pgcympdx3" path="res://Scripts/bloock.gd" id="1_28ji2"]
 [ext_resource type="Texture2D" uid="uid://bo7s0ss0mtdcy" path="res://assets/images/5.png" id="2_jbufx"]
 
-[node name="Block5" type="Node2D" unique_id=1511633279]
+[node name="Block5" type="Node2D" unique_id=1511633279 groups=["Block"]]
 script = ExtResource("1_28ji2")
 offset = Vector2(24, 12)
 

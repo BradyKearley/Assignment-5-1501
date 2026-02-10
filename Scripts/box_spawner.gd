@@ -1,13 +1,13 @@
 extends Node2D
 
 var block_scenes = [
-	"res://Scenes/block_1.tscn",
-	"res://Scenes/block_2.tscn", 
-	"res://Scenes/block_3.tscn",
-	"res://Scenes/block_4.tscn",
-	"res://Scenes/block_5.tscn",
-	"res://Scenes/block_6.tscn",
-	"res://Scenes/block_7.tscn"
+	"res://Scenes/Blocks/block_1.tscn",
+	"res://Scenes/Blocks/block_2.tscn", 
+	"res://Scenes/Blocks/block_3.tscn",
+	"res://Scenes/Blocks/block_4.tscn",
+	"res://Scenes/Blocks/block_5.tscn",
+	"res://Scenes/Blocks/block_6.tscn",
+	"res://Scenes/Blocks/block_7.tscn"
 ]
 
 func spawn_random_box():

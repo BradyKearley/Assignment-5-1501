@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bwfkeicaboxmb"]
 
-[ext_resource type="Script" uid="uid://bwse5h6aqc47q" path="res://box_spawner.gd" id="1_0x5gj"]
+[ext_resource type="Script" uid="uid://bwse5h6aqc47q" path="res://Scripts/box_spawner.gd" id="1_0x5gj"]
 
 [node name="BoxSpawner" type="Node2D" unique_id=1873429057]
 script = ExtResource("1_0x5gj")
