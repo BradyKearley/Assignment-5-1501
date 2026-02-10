@@ -2,10 +2,12 @@
 
 [ext_resource type="Script" uid="uid://d3u7pgcympdx3" path="res://Scripts/bloock.gd" id="1_gegon"]
 [ext_resource type="Texture2D" uid="uid://bw1b3me0dyg0h" path="res://assets/images/4.png" id="2_8r0hq"]
+[ext_resource type="AudioStream" uid="uid://b5puggrjb6yba" path="res://assets/SFX/impactWood_heavy_003.ogg" id="3_otrf5"]
+[ext_resource type="AudioStream" uid="uid://bvs28ymale63j" path="res://assets/SFX/impactWood_light_002.ogg" id="4_47cg5"]
 
 [node name="Block3" type="Node2D" unique_id=1511633279 groups=["Block"]]
 script = ExtResource("1_gegon")
-offset = Vector2(36, 24)
+offset = Vector2(24, 12)
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1637289280]
 position = Vector2(-36, -24)
@@ -15,6 +17,12 @@ texture = ExtResource("2_8r0hq")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Sprite2D/Area2D" unique_id=1832829256]
 polygon = PackedVector2Array(12, -24, -12, -24, -12, 0, -36, 0, -36, 24, 36, 24, 36, 0, 12, 0)
+
+[node name="Heavy" type="AudioStreamPlayer2D" parent="." unique_id=1342837488]
+stream = ExtResource("3_otrf5")
+
+[node name="Light" type="AudioStreamPlayer2D" parent="." unique_id=1374515591]
+stream = ExtResource("4_47cg5")
 
 [connection signal="mouse_entered" from="Sprite2D/Area2D" to="." method="_on_area_2d_mouse_entered"]
 [connection signal="mouse_exited" from="Sprite2D/Area2D" to="." method="_on_area_2d_mouse_exited"]

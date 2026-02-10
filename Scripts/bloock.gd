@@ -7,6 +7,13 @@ var isPickedUp: bool = false
 func _input(event: InputEvent) -> void:
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and event.pressed and mouseHover:
 		isPickedUp = !isPickedUp
+		if isPickedUp:
+			#This pitch scale makes repetative sounds less repetative leads to less noise fatigue
+			$Light.pitch_scale = randf_range(0.9, 1.1)
+			$Light.play()
+		else:
+			$Heavy.pitch_scale = randf_range(0.9, 1.1)
+			$Heavy.play()
 
 func _process(delta: float) -> void:
 	#Deletes blocks off screen

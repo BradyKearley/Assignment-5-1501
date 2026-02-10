@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://bqxgeete5ykbu" path="res://Scenes/Blocks/block_4.tscn" id="4_6whob"]
 [ext_resource type="PackedScene" uid="uid://b8n1a1gng468l" path="res://Scenes/Blocks/block_5.tscn" id="5_u7krg"]
 [ext_resource type="PackedScene" uid="uid://bodhuqqjrrx5v" path="res://Scenes/Blocks/block_6.tscn" id="6_tx0tn"]
+[ext_resource type="PackedScene" uid="uid://wrqqj0etllwt" path="res://Scenes/Blocks/block_7.tscn" id="7_wjtap"]
 [ext_resource type="PackedScene" uid="uid://bwfkeicaboxmb" path="res://Scenes/box_spawner.tscn" id="8_boxsp"]
 [ext_resource type="PackedScene" uid="uid://bt3ljuscnb7j5" path="res://Scenes/conveyer.tscn" id="9_chwn1"]
 
@@ -25,21 +26,22 @@ rotation = 1.5707964
 scale = Vector2(26.960003, 1.6800003)
 direction = Vector2(0, 1)
 
-[node name="Block1" parent="." unique_id=1511633279 instance=ExtResource("1_j2wod")]
-position = Vector2(1019, 284)
+[node name="Block3" parent="." unique_id=1511633279 instance=ExtResource("3_hh5uf")]
+position = Vector2(400, 195)
 
-[node name="Block6" parent="." unique_id=1415705207 instance=ExtResource("6_tx0tn")]
-position = Vector2(673, 368)
+[node name="Block1" parent="." unique_id=1212201615 instance=ExtResource("1_j2wod")]
+position = Vector2(264, 230)
 
-[node name="Block4" parent="." unique_id=2063133417 instance=ExtResource("4_6whob")]
-position = Vector2(566, 297)
+[node name="Block2" parent="." unique_id=1357063141 instance=ExtResource("2_v1qfn")]
+position = Vector2(247, 332)
 
-[node name="Block3" parent="." unique_id=534161045 instance=ExtResource("3_hh5uf")]
-position = Vector2(645, 304)
-offset = Vector2(36, 0)
+[node name="Block4" parent="." unique_id=320106494 instance=ExtResource("4_6whob")]
+position = Vector2(693, 334)
 
-[node name="Block2" parent="." unique_id=968838334 instance=ExtResource("2_v1qfn")]
-position = Vector2(431, 299)
+[node name="Block5" parent="." unique_id=1364252091 instance=ExtResource("5_u7krg")]
+position = Vector2(408, 400)
 
-[node name="Block5" parent="." unique_id=1801564949 instance=ExtResource("5_u7krg")]
-position = Vector2(568, 355)
+[node name="Block6" parent="." unique_id=1780565405 instance=ExtResource("6_tx0tn")]
+position = Vector2(236, 413)
+
+[node name="Block7" parent="." unique_id=1918683852 instance=ExtResource("7_wjtap")]
