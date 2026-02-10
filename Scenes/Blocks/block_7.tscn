@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://1sh8jc7loeiw" path="res://assets/images/6.png" id="2_d5lkd"]
 [ext_resource type="AudioStream" uid="uid://b5puggrjb6yba" path="res://assets/SFX/impactWood_heavy_003.ogg" id="3_mc3rh"]
 [ext_resource type="AudioStream" uid="uid://bvs28ymale63j" path="res://assets/SFX/impactWood_light_002.ogg" id="4_2samm"]
+[ext_resource type="AudioStream" uid="uid://dhlutit34c7n1" path="res://assets/SFX/impactWood_medium_000.ogg" id="5_2samm"]
 
 [node name="Block7" type="Node2D" unique_id=1511633279 groups=["Block"]]
 script = ExtResource("1_xi8dm")
@@ -23,6 +24,9 @@ stream = ExtResource("3_mc3rh")
 
 [node name="Light" type="AudioStreamPlayer2D" parent="." unique_id=2094404064]
 stream = ExtResource("4_2samm")
+
+[node name="Medium" type="AudioStreamPlayer2D" parent="." unique_id=422776352]
+stream = ExtResource("5_2samm")
 
 [connection signal="mouse_entered" from="Sprite2D/Area2D" to="." method="_on_area_2d_mouse_entered"]
 [connection signal="mouse_exited" from="Sprite2D/Area2D" to="." method="_on_area_2d_mouse_exited"]

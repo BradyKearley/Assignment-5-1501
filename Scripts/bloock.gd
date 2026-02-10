@@ -49,6 +49,8 @@ func _process(delta: float) -> void:
 		global_position = get_global_mouse_position().snapped(Vector2(24, 24)) + rotated_offset + addition_offset
 	
 	if isPickedUp and Input.is_action_just_pressed("Rotate"):
+		$Medium.pitch_scale = randf_range(0.9, 1.1)
+		$Medium.play()
 		rotation += deg_to_rad(90)
 
 
