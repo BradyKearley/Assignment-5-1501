@@ -1,0 +1,40 @@
+extends CanvasLayer
+# Notifies `Main` node that the button has been pressed
+signal start_game
+
+func show_message(text):
+	$Message.text = text
+	$Message.show()
+	
+func show_game_over():
+	show_message("Game Over")
+	# Wait until the MessageTimer has counted down.
+
+	$StartButton.show()
+
+
+func _on_rules_button_pressed():
+	$StartButton.hide()
+	$RulesButton.hide()
+	$Title.hide()
+	
+	$rules.show()
+	$Back.show()
+
+func _on_start_buton_pressed():
+	$StartButton.hide()
+	$RulesButton.hide()
+	$Title.hide()
+	start_game.emit()
+
+
+func _on_back_pressed() -> void:
+	$rules.hide()
+	$RulesButton.hide()
+	$Back.hide()
+	
+	$RulesButton.show()
+	$StartButton.show()
+	$Title.show()
+#right now back and rules still show, but when we have a main g
+#ill do a .hide() for both, that should hide them
