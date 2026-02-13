@@ -1,5 +1,7 @@
 extends Node2D
 
+signal trigger_shape_update()
+
 static var currently_picked_up_block: Node2D = null
 
 var mouseHover: bool = false
@@ -16,6 +18,18 @@ func is_overlapping_other_blocks() -> bool:
 			return true
 	return false
 
+
+func _ready() -> void:
+	# Find the shape node
+	var shape: Node2D
+	for child in get_node("/root/Node2D").get_children():
+		if child.is_in_group("Shape"):
+			shape = child
+			break
+	# Link the update shape signal to the shape node
+	trigger_shape_update.connect(shape.update_correct_blocks)
+
+
 func _input(event: InputEvent) -> void:
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
 		if isPickedUp:
@@ -25,6 +39,8 @@ func _input(event: InputEvent) -> void:
 				currently_picked_up_block = null
 				$Heavy.pitch_scale = randf_range(0.9, 1.1)
 				$Heavy.play()
+				# Update the number of correct blocks in the shape
+				trigger_shape_update.emit($Sprite2D/Area2D)
 		elif mouseHover:
 			# Picking up - check if no other block is picked up
 			if currently_picked_up_block == null:

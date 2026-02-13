@@ -1,0 +1,391 @@
+[gd_scene format=3 uid="uid://cb8ee3qwnch8n"]
+
+[ext_resource type="Script" uid="uid://bqd0fvvew28ol" path="res://Scripts/shape.gd" id="1_gfia2"]
+[ext_resource type="Texture2D" uid="uid://d3ispak4hvggn" path="res://assets/images/shape4.png" id="2_gfia2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gfia2"]
+size = Vector2(17, 17)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pgljx"]
+size = Vector2(40.5, 41)
+
+[node name="Shape4" type="Node2D" unique_id=1281585530 groups=["Shape"]]
+script = ExtResource("1_gfia2")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1635751572]
+texture_filter = 3
+position = Vector2(-175, -175)
+texture = ExtResource("2_gfia2")
+
+[node name="Area2D" type="Area2D" parent="Sprite2D" unique_id=1916959455]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/Area2D" unique_id=427248894]
+position = Vector2(-19, -163)
+shape = SubResource("RectangleShape2D_gfia2")
+
+[node name="Area2D2" type="Area2D" parent="Sprite2D" unique_id=494895604]
+position = Vector2(-24, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/Area2D2" unique_id=857338600]
+position = Vector2(-19, -163)
+shape = SubResource("RectangleShape2D_gfia2")
+
+[node name="Area2D3" type="Area2D" parent="Sprite2D" unique_id=1969454355]
+position = Vector2(-48, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/Area2D3" unique_id=1788655233]
+position = Vector2(-19, -163)
+shape = SubResource("RectangleShape2D_gfia2")
+
+[node name="Area2D4" type="Area2D" parent="Sprite2D" unique_id=1748030951]
+position = Vector2(-48, 24)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/Area2D4" unique_id=1737043248]
+position = Vector2(-19, -163)
+shape = SubResource("RectangleShape2D_gfia2")
+
+[node name="Area2D5" type="Area2D" parent="Sprite2D" unique_id=56033666]
+position = Vector2(-24, 24)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/Area2D5" unique_id=1557224541]
+position = Vector2(-19, -163)
+shape = SubResource("RectangleShape2D_gfia2")
+
+[node name="Area2D6" type="Area2D" parent="Sprite2D" unique_id=844849295]
+position = Vector2(-24, 48)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/Area2D6" unique_id=2032241109]
+position = Vector2(-19, -163)
+shape = SubResource("RectangleShape2D_gfia2")
+
+[node name="Area2D7" type="Area2D" parent="Sprite2D" unique_id=303880843]
+position = Vector2(-48, 48)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/Area2D7" unique_id=1266551805]
+position = Vector2(-19, -163)
+shape = SubResource("RectangleShape2D_gfia2")
+
+[node name="Area2D8" type="Area2D" parent="Sprite2D" unique_id=1445042954]
+position = Vector2(-48, 72)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/Area2D8" unique_id=1377044966]
+position = Vector2(-19, -163)
+shape = SubResource("RectangleShape2D_gfia2")
+
+[node name="Area2D9" type="Area2D" parent="Sprite2D" unique_id=1099980217]
+position = Vector2(-24, 72)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/Area2D9" unique_id=1947249658]
+position = Vector2(-19, -163)
+shape = SubResource("RectangleShape2D_gfia2")
+
+[node name="Area2D10" type="Area2D" parent="Sprite2D" unique_id=840280190]
+position = Vector2(-72, 72)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/Area2D10" unique_id=1264426270]
+position = Vector2(-19, -163)
+shape = SubResource("RectangleShape2D_gfia2")
+
+[node name="Area2D11" type="Area2D" parent="Sprite2D" unique_id=1163154884]
+position = Vector2(-96, 72)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/Area2D11" unique_id=1628622285]
+position = Vector2(-19, -163)
+shape = SubResource("RectangleShape2D_gfia2")
+
+[node name="Area2D12" type="Area2D" parent="Sprite2D" unique_id=653835919]
+position = Vector2(-96, 96)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/Area2D12" unique_id=1122337186]
+position = Vector2(-19, -163)
+shape = SubResource("RectangleShape2D_gfia2")
+
+[node name="Area2D13" type="Area2D" parent="Sprite2D" unique_id=375848103]
+position = Vector2(-72, 96)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/Area2D13" unique_id=1423339414]
+position = Vector2(-19, -163)
+shape = SubResource("RectangleShape2D_gfia2")
+
+[node name="Area2D14" type="Area2D" parent="Sprite2D" unique_id=434797214]
+position = Vector2(-72, 120)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/Area2D14" unique_id=1712044026]
+position = Vector2(-19, -163)
+shape = SubResource("RectangleShape2D_gfia2")
+
+[node name="Area2D15" type="Area2D" parent="Sprite2D" unique_id=374538403]
+position = Vector2(-96, 120)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/Area2D15" unique_id=625084773]
+position = Vector2(-19, -163)
+shape = SubResource("RectangleShape2D_gfia2")
+
+[node name="Area2D16" type="Area2D" parent="Sprite2D" unique_id=1312486104]
+position = Vector2(-96, 144)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/Area2D16" unique_id=1271886841]
+position = Vector2(-19, -163)
+shape = SubResource("RectangleShape2D_gfia2")
+
+[node name="Area2D17" type="Area2D" parent="Sprite2D" unique_id=1340078387]
+position = Vector2(-72, 144)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/Area2D17" unique_id=1876361177]
+position = Vector2(-19, -163)
+shape = SubResource("RectangleShape2D_gfia2")
+
+[node name="Area2D18" type="Area2D" parent="Sprite2D" unique_id=1669750418]
+position = Vector2(24, 120)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/Area2D18" unique_id=1334393780]
+position = Vector2(-19, -163)
+shape = SubResource("RectangleShape2D_gfia2")
+
+[node name="Area2D19" type="Area2D" parent="Sprite2D" unique_id=1861667998]
+position = Vector2(0, 120)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/Area2D19" unique_id=597480491]
+position = Vector2(-19, -163)
+shape = SubResource("RectangleShape2D_gfia2")
+
+[node name="Area2D20" type="Area2D" parent="Sprite2D" unique_id=1570501659]
+position = Vector2(0, 144)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/Area2D20" unique_id=1626409629]
+position = Vector2(-19, -163)
+shape = SubResource("RectangleShape2D_gfia2")
+
+[node name="Area2D21" type="Area2D" parent="Sprite2D" unique_id=2006093611]
+position = Vector2(24, 144)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/Area2D21" unique_id=1656168670]
+position = Vector2(-19, -163)
+shape = SubResource("RectangleShape2D_gfia2")
+
+[node name="Area2D22" type="Area2D" parent="Sprite2D" unique_id=1838599598]
+position = Vector2(24, 72)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/Area2D22" unique_id=115206303]
+position = Vector2(-19, -163)
+shape = SubResource("RectangleShape2D_gfia2")
+
+[node name="Area2D23" type="Area2D" parent="Sprite2D" unique_id=363042694]
+position = Vector2(0, 72)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/Area2D23" unique_id=657931600]
+position = Vector2(-19, -163)
+shape = SubResource("RectangleShape2D_gfia2")
+
+[node name="Area2D24" type="Area2D" parent="Sprite2D" unique_id=1263293847]
+position = Vector2(0, 96)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/Area2D24" unique_id=702234706]
+position = Vector2(-19, -163)
+shape = SubResource("RectangleShape2D_gfia2")
+
+[node name="Area2D25" type="Area2D" parent="Sprite2D" unique_id=1011745164]
+position = Vector2(24, 96)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/Area2D25" unique_id=1240182681]
+position = Vector2(-19, -163)
+shape = SubResource("RectangleShape2D_gfia2")
+
+[node name="Area2D26" type="Area2D" parent="Sprite2D" unique_id=1831388959]
+position = Vector2(0, 48)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/Area2D26" unique_id=2015860550]
+position = Vector2(-19, -163)
+shape = SubResource("RectangleShape2D_gfia2")
+
+[node name="Area2D27" type="Area2D" parent="Sprite2D" unique_id=879426145]
+position = Vector2(48, 72)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/Area2D27" unique_id=1047212985]
+position = Vector2(-19, -163)
+shape = SubResource("RectangleShape2D_gfia2")
+
+[node name="Area2D28" type="Area2D" parent="Sprite2D" unique_id=2088703603]
+position = Vector2(72, 72)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/Area2D28" unique_id=589381495]
+position = Vector2(-19, -163)
+shape = SubResource("RectangleShape2D_gfia2")
+
+[node name="Area2D30" type="Area2D" parent="Sprite2D" unique_id=1429098790]
+position = Vector2(96, 96)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/Area2D30" unique_id=947172867]
+position = Vector2(-43, -163)
+shape = SubResource("RectangleShape2D_gfia2")
+
+[node name="Area2D31" type="Area2D" parent="Sprite2D" unique_id=1121777454]
+position = Vector2(24, 168)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/Area2D31" unique_id=793600513]
+position = Vector2(-19, -163)
+shape = SubResource("RectangleShape2D_gfia2")
+
+[node name="Area2D32" type="Area2D" parent="Sprite2D" unique_id=979362742]
+position = Vector2(24, 192)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/Area2D32" unique_id=1174499834]
+position = Vector2(-19, -163)
+shape = SubResource("RectangleShape2D_gfia2")
+
+[node name="Area2D33" type="Area2D" parent="Sprite2D" unique_id=1585123923]
+position = Vector2(48, 192)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/Area2D33" unique_id=1108936524]
+position = Vector2(-19, -163)
+shape = SubResource("RectangleShape2D_gfia2")
+
+[node name="Area2D34" type="Area2D" parent="Sprite2D" unique_id=314409873]
+position = Vector2(-48, 144)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/Area2D34" unique_id=852938647]
+position = Vector2(-19, -163)
+shape = SubResource("RectangleShape2D_gfia2")
+
+[node name="Area2D35" type="Area2D" parent="Sprite2D" unique_id=516827738]
+position = Vector2(-24, 144)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/Area2D35" unique_id=1074951607]
+position = Vector2(-19, -163)
+shape = SubResource("RectangleShape2D_gfia2")
+
+[node name="Area2D36" type="Area2D" parent="Sprite2D" unique_id=145737437]
+position = Vector2(-120, 192)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/Area2D36" unique_id=641987262]
+position = Vector2(-19, -163)
+shape = SubResource("RectangleShape2D_gfia2")
+
+[node name="Area2D37" type="Area2D" parent="Sprite2D" unique_id=997477332]
+position = Vector2(-96, 192)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/Area2D37" unique_id=752149322]
+position = Vector2(-19, -163)
+shape = SubResource("RectangleShape2D_gfia2")
+
+[node name="Area2D38" type="Area2D" parent="Sprite2D" unique_id=2100933172]
+position = Vector2(-144, 72)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/Area2D38" unique_id=1204222656]
+position = Vector2(-19, -163)
+shape = SubResource("RectangleShape2D_gfia2")
+
+[node name="Area2D39" type="Area2D" parent="Sprite2D" unique_id=354222007]
+position = Vector2(-120, 72)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/Area2D39" unique_id=478165877]
+position = Vector2(-19, -163)
+shape = SubResource("RectangleShape2D_gfia2")
+
+[node name="Area2D40" type="Area2D" parent="Sprite2D" unique_id=1854852990]
+position = Vector2(-144, 48)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/Area2D40" unique_id=1836087018]
+position = Vector2(-19, -163)
+shape = SubResource("RectangleShape2D_gfia2")
+
+[node name="Area2D41" type="Area2D" parent="Sprite2D" unique_id=677435894]
+position = Vector2(-96, 168)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/Area2D41" unique_id=1135165787]
+position = Vector2(-19, -162)
+shape = SubResource("RectangleShape2D_gfia2")
+
+[node name="IncorrectArea2D" type="Area2D" parent="." unique_id=935931548]
+position = Vector2(-175, -175)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="IncorrectArea2D" unique_id=948997570]
+polygon = PackedVector2Array(-99, -110, -86, -110, -86, -181, -2, -181, -2, -147, -25, -147, -25, -132, -2, -132, -2, -107, 70, -107, 70, -51, 38, -51, 38, -75, 23, -75, 23, 13, 44, 13, 44, 44, -14, 44, -14, -2, -97, -2, -97, 44, -154, 44, -154, 13, -129, 13, -129, -77, -178, -77, -178, -129, -148, -129, -148, -106, -86, -106, -86, -110, -99, -110, -144, -110, -144, -135, -182, -135, -182, -72, -133, -72, -133, 10, -160, 10, -160, 48, -93, 48, -93, 2, -20, 2, -20, 48, -14, 48, 49, 48, 49, 8, 29, 8, 29, -66, 34, -66, 34, -42, 77, -42, 77, -122, 5, -122, 5, -190, -86, -190, -99, -190)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="IncorrectArea2D" unique_id=1149510046]
+position = Vector2(-55, -55)
+shape = SubResource("RectangleShape2D_pgljx")
+debug_color = Color(1, 1, 1, 0.41960785)
+
+[connection signal="area_entered" from="Sprite2D/Area2D" to="." method="_on_area_2d_updated"]
+[connection signal="area_exited" from="Sprite2D/Area2D" to="." method="_on_area_2d_updated"]
+[connection signal="area_entered" from="Sprite2D/Area2D2" to="." method="_on_area_2d_updated"]
+[connection signal="area_exited" from="Sprite2D/Area2D2" to="." method="_on_area_2d_updated"]
+[connection signal="area_entered" from="Sprite2D/Area2D3" to="." method="_on_area_2d_updated"]
+[connection signal="area_exited" from="Sprite2D/Area2D3" to="." method="_on_area_2d_updated"]
+[connection signal="area_entered" from="Sprite2D/Area2D4" to="." method="_on_area_2d_updated"]
+[connection signal="area_exited" from="Sprite2D/Area2D4" to="." method="_on_area_2d_updated"]
+[connection signal="area_entered" from="Sprite2D/Area2D5" to="." method="_on_area_2d_updated"]
+[connection signal="area_exited" from="Sprite2D/Area2D5" to="." method="_on_area_2d_updated"]
+[connection signal="area_entered" from="Sprite2D/Area2D6" to="." method="_on_area_2d_updated"]
+[connection signal="area_exited" from="Sprite2D/Area2D6" to="." method="_on_area_2d_updated"]
+[connection signal="area_entered" from="Sprite2D/Area2D7" to="." method="_on_area_2d_updated"]
+[connection signal="area_exited" from="Sprite2D/Area2D7" to="." method="_on_area_2d_updated"]
+[connection signal="area_entered" from="Sprite2D/Area2D8" to="." method="_on_area_2d_updated"]
+[connection signal="area_exited" from="Sprite2D/Area2D8" to="." method="_on_area_2d_updated"]
+[connection signal="area_entered" from="Sprite2D/Area2D9" to="." method="_on_area_2d_updated"]
+[connection signal="area_exited" from="Sprite2D/Area2D9" to="." method="_on_area_2d_updated"]
+[connection signal="area_entered" from="Sprite2D/Area2D10" to="." method="_on_area_2d_updated"]
+[connection signal="area_exited" from="Sprite2D/Area2D10" to="." method="_on_area_2d_updated"]
+[connection signal="area_entered" from="Sprite2D/Area2D11" to="." method="_on_area_2d_updated"]
+[connection signal="area_exited" from="Sprite2D/Area2D11" to="." method="_on_area_2d_updated"]
+[connection signal="area_entered" from="Sprite2D/Area2D12" to="." method="_on_area_2d_updated"]
+[connection signal="area_exited" from="Sprite2D/Area2D12" to="." method="_on_area_2d_updated"]
+[connection signal="area_entered" from="Sprite2D/Area2D13" to="." method="_on_area_2d_updated"]
+[connection signal="area_exited" from="Sprite2D/Area2D13" to="." method="_on_area_2d_updated"]
+[connection signal="area_entered" from="Sprite2D/Area2D14" to="." method="_on_area_2d_updated"]
+[connection signal="area_exited" from="Sprite2D/Area2D14" to="." method="_on_area_2d_updated"]
+[connection signal="area_entered" from="Sprite2D/Area2D15" to="." method="_on_area_2d_updated"]
+[connection signal="area_exited" from="Sprite2D/Area2D15" to="." method="_on_area_2d_updated"]
+[connection signal="area_entered" from="Sprite2D/Area2D16" to="." method="_on_area_2d_updated"]
+[connection signal="area_exited" from="Sprite2D/Area2D16" to="." method="_on_area_2d_updated"]
+[connection signal="area_entered" from="Sprite2D/Area2D17" to="." method="_on_area_2d_updated"]
+[connection signal="area_exited" from="Sprite2D/Area2D17" to="." method="_on_area_2d_updated"]
+[connection signal="area_entered" from="Sprite2D/Area2D18" to="." method="_on_area_2d_updated"]
+[connection signal="area_exited" from="Sprite2D/Area2D18" to="." method="_on_area_2d_updated"]
+[connection signal="area_entered" from="Sprite2D/Area2D19" to="." method="_on_area_2d_updated"]
+[connection signal="area_exited" from="Sprite2D/Area2D19" to="." method="_on_area_2d_updated"]
+[connection signal="area_entered" from="Sprite2D/Area2D20" to="." method="_on_area_2d_updated"]
+[connection signal="area_exited" from="Sprite2D/Area2D20" to="." method="_on_area_2d_updated"]
+[connection signal="area_entered" from="Sprite2D/Area2D21" to="." method="_on_area_2d_updated"]
+[connection signal="area_exited" from="Sprite2D/Area2D21" to="." method="_on_area_2d_updated"]
+[connection signal="area_entered" from="Sprite2D/Area2D22" to="." method="_on_area_2d_updated"]
+[connection signal="area_exited" from="Sprite2D/Area2D22" to="." method="_on_area_2d_updated"]
+[connection signal="area_entered" from="Sprite2D/Area2D23" to="." method="_on_area_2d_updated"]
+[connection signal="area_exited" from="Sprite2D/Area2D23" to="." method="_on_area_2d_updated"]
+[connection signal="area_entered" from="Sprite2D/Area2D24" to="." method="_on_area_2d_updated"]
+[connection signal="area_exited" from="Sprite2D/Area2D24" to="." method="_on_area_2d_updated"]
+[connection signal="area_entered" from="Sprite2D/Area2D25" to="." method="_on_area_2d_updated"]
+[connection signal="area_exited" from="Sprite2D/Area2D25" to="." method="_on_area_2d_updated"]
+[connection signal="area_entered" from="Sprite2D/Area2D26" to="." method="_on_area_2d_updated"]
+[connection signal="area_exited" from="Sprite2D/Area2D26" to="." method="_on_area_2d_updated"]
+[connection signal="area_entered" from="Sprite2D/Area2D27" to="." method="_on_area_2d_updated"]
+[connection signal="area_exited" from="Sprite2D/Area2D27" to="." method="_on_area_2d_updated"]
+[connection signal="area_entered" from="Sprite2D/Area2D28" to="." method="_on_area_2d_updated"]
+[connection signal="area_exited" from="Sprite2D/Area2D28" to="." method="_on_area_2d_updated"]
+[connection signal="area_entered" from="Sprite2D/Area2D30" to="." method="_on_area_2d_updated"]
+[connection signal="area_exited" from="Sprite2D/Area2D30" to="." method="_on_area_2d_updated"]
+[connection signal="area_entered" from="Sprite2D/Area2D31" to="." method="_on_area_2d_updated"]
+[connection signal="area_exited" from="Sprite2D/Area2D31" to="." method="_on_area_2d_updated"]
+[connection signal="area_entered" from="Sprite2D/Area2D32" to="." method="_on_area_2d_updated"]
+[connection signal="area_exited" from="Sprite2D/Area2D32" to="." method="_on_area_2d_updated"]
+[connection signal="area_entered" from="Sprite2D/Area2D33" to="." method="_on_area_2d_updated"]
+[connection signal="area_exited" from="Sprite2D/Area2D33" to="." method="_on_area_2d_updated"]
+[connection signal="area_entered" from="Sprite2D/Area2D34" to="." method="_on_area_2d_updated"]
+[connection signal="area_exited" from="Sprite2D/Area2D34" to="." method="_on_area_2d_updated"]
+[connection signal="area_entered" from="Sprite2D/Area2D35" to="." method="_on_area_2d_updated"]
+[connection signal="area_exited" from="Sprite2D/Area2D35" to="." method="_on_area_2d_updated"]
+[connection signal="area_entered" from="Sprite2D/Area2D36" to="." method="_on_area_2d_updated"]
+[connection signal="area_exited" from="Sprite2D/Area2D36" to="." method="_on_area_2d_updated"]
+[connection signal="area_entered" from="Sprite2D/Area2D37" to="." method="_on_area_2d_updated"]
+[connection signal="area_exited" from="Sprite2D/Area2D37" to="." method="_on_area_2d_updated"]
+[connection signal="area_entered" from="Sprite2D/Area2D38" to="." method="_on_area_2d_updated"]
+[connection signal="area_exited" from="Sprite2D/Area2D38" to="." method="_on_area_2d_updated"]
+[connection signal="area_entered" from="Sprite2D/Area2D39" to="." method="_on_area_2d_updated"]
+[connection signal="area_exited" from="Sprite2D/Area2D39" to="." method="_on_area_2d_updated"]
+[connection signal="area_entered" from="Sprite2D/Area2D40" to="." method="_on_area_2d_updated"]
+[connection signal="area_exited" from="Sprite2D/Area2D40" to="." method="_on_area_2d_updated"]
+[connection signal="area_entered" from="Sprite2D/Area2D41" to="." method="_on_area_2d_updated"]
+[connection signal="area_exited" from="Sprite2D/Area2D41" to="." method="_on_area_2d_updated"]
+[connection signal="area_entered" from="IncorrectArea2D" to="." method="_on_area_2d_updated"]
+[connection signal="area_exited" from="IncorrectArea2D" to="." method="_on_area_2d_updated"]

@@ -1,0 +1,310 @@
+[gd_scene format=3 uid="uid://7lbgtmy81g1q"]
+
+[ext_resource type="Script" uid="uid://bqd0fvvew28ol" path="res://Scripts/shape.gd" id="1_vu5xt"]
+[ext_resource type="Texture2D" uid="uid://ditraqhdvkfom" path="res://assets/images/shape3.png" id="2_vu5xt"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vu5xt"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pgljx"]
+size = Vector2(40.5, 41)
+
+[node name="Shape3" type="Node2D" unique_id=1281585530 groups=["Shape"]]
+script = ExtResource("1_vu5xt")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1635751572]
+texture_filter = 3
+position = Vector2(-175, -175)
+texture = ExtResource("2_vu5xt")
+
+[node name="Area2D" type="Area2D" parent="Sprite2D" unique_id=1747296844]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/Area2D" unique_id=169680422]
+position = Vector2(-43, 29)
+shape = SubResource("RectangleShape2D_vu5xt")
+
+[node name="Area2D2" type="Area2D" parent="Sprite2D" unique_id=1371135810]
+position = Vector2(0, -24)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/Area2D2" unique_id=1995979939]
+position = Vector2(-43, 29)
+shape = SubResource("RectangleShape2D_vu5xt")
+
+[node name="Area2D3" type="Area2D" parent="Sprite2D" unique_id=1177584053]
+position = Vector2(-24, -24)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/Area2D3" unique_id=1592985651]
+position = Vector2(-43, 29)
+shape = SubResource("RectangleShape2D_vu5xt")
+
+[node name="Area2D4" type="Area2D" parent="Sprite2D" unique_id=1643792846]
+position = Vector2(-24, -48)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/Area2D4" unique_id=1370024316]
+position = Vector2(-43, 29)
+shape = SubResource("RectangleShape2D_vu5xt")
+
+[node name="Area2D5" type="Area2D" parent="Sprite2D" unique_id=1944630142]
+position = Vector2(0, -48)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/Area2D5" unique_id=1486288621]
+position = Vector2(-43, 29)
+shape = SubResource("RectangleShape2D_vu5xt")
+
+[node name="Area2D6" type="Area2D" parent="Sprite2D" unique_id=1457675509]
+position = Vector2(0, -72)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/Area2D6" unique_id=658221693]
+position = Vector2(-43, 29)
+shape = SubResource("RectangleShape2D_vu5xt")
+
+[node name="Area2D7" type="Area2D" parent="Sprite2D" unique_id=1751535161]
+position = Vector2(24, -72)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/Area2D7" unique_id=1411570635]
+position = Vector2(-43, 29)
+shape = SubResource("RectangleShape2D_vu5xt")
+
+[node name="Area2D8" type="Area2D" parent="Sprite2D" unique_id=1458187288]
+position = Vector2(24, -96)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/Area2D8" unique_id=36912343]
+position = Vector2(-43, 29)
+shape = SubResource("RectangleShape2D_vu5xt")
+
+[node name="Area2D9" type="Area2D" parent="Sprite2D" unique_id=35738531]
+position = Vector2(48, -96)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/Area2D9" unique_id=949122942]
+position = Vector2(-43, 29)
+shape = SubResource("RectangleShape2D_vu5xt")
+
+[node name="Area2D10" type="Area2D" parent="Sprite2D" unique_id=632558270]
+position = Vector2(48, -120)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/Area2D10" unique_id=1098662302]
+position = Vector2(-43, 29)
+shape = SubResource("RectangleShape2D_vu5xt")
+
+[node name="Area2D11" type="Area2D" parent="Sprite2D" unique_id=2058932950]
+position = Vector2(-24, -72)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/Area2D11" unique_id=888117167]
+position = Vector2(-43, 29)
+shape = SubResource("RectangleShape2D_vu5xt")
+
+[node name="Area2D12" type="Area2D" parent="Sprite2D" unique_id=1420727254]
+position = Vector2(-24, -96)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/Area2D12" unique_id=1577192470]
+position = Vector2(-43, 29)
+shape = SubResource("RectangleShape2D_vu5xt")
+
+[node name="Area2D13" type="Area2D" parent="Sprite2D" unique_id=663318857]
+position = Vector2(0, -96)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/Area2D13" unique_id=1016979081]
+position = Vector2(-43, 29)
+shape = SubResource("RectangleShape2D_vu5xt")
+
+[node name="Area2D14" type="Area2D" parent="Sprite2D" unique_id=1851317181]
+position = Vector2(0, -120)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/Area2D14" unique_id=59814851]
+position = Vector2(-43, 29)
+shape = SubResource("RectangleShape2D_vu5xt")
+
+[node name="Area2D15" type="Area2D" parent="Sprite2D" unique_id=1557046887]
+position = Vector2(0, -144)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/Area2D15" unique_id=287709757]
+position = Vector2(-43, 29)
+shape = SubResource("RectangleShape2D_vu5xt")
+
+[node name="Area2D16" type="Area2D" parent="Sprite2D" unique_id=1566306191]
+position = Vector2(0, -168)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/Area2D16" unique_id=572647067]
+position = Vector2(-43, 29)
+shape = SubResource("RectangleShape2D_vu5xt")
+
+[node name="Area2D17" type="Area2D" parent="Sprite2D" unique_id=2109977804]
+position = Vector2(24, -168)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/Area2D17" unique_id=1532642114]
+position = Vector2(-43, 29)
+shape = SubResource("RectangleShape2D_vu5xt")
+
+[node name="Area2D18" type="Area2D" parent="Sprite2D" unique_id=1393260466]
+position = Vector2(24, -192)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/Area2D18" unique_id=228837612]
+position = Vector2(-43, 29)
+shape = SubResource("RectangleShape2D_vu5xt")
+
+[node name="Area2D19" type="Area2D" parent="Sprite2D" unique_id=860240329]
+position = Vector2(0, -192)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/Area2D19" unique_id=1040488424]
+position = Vector2(-43, 29)
+shape = SubResource("RectangleShape2D_vu5xt")
+
+[node name="Area2D20" type="Area2D" parent="Sprite2D" unique_id=2074461814]
+position = Vector2(24, -120)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/Area2D20" unique_id=824419530]
+position = Vector2(-43, 29)
+shape = SubResource("RectangleShape2D_vu5xt")
+
+[node name="Area2D21" type="Area2D" parent="Sprite2D" unique_id=735448901]
+position = Vector2(-48, -96)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/Area2D21" unique_id=970941232]
+position = Vector2(-43, 29)
+shape = SubResource("RectangleShape2D_vu5xt")
+
+[node name="Area2D22" type="Area2D" parent="Sprite2D" unique_id=643632093]
+position = Vector2(-72, -48)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/Area2D22" unique_id=1591506415]
+position = Vector2(-43, 29)
+shape = SubResource("RectangleShape2D_vu5xt")
+
+[node name="Area2D23" type="Area2D" parent="Sprite2D" unique_id=261157519]
+position = Vector2(-72, -72)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/Area2D23" unique_id=1238211569]
+position = Vector2(-43, 29)
+shape = SubResource("RectangleShape2D_vu5xt")
+
+[node name="Area2D24" type="Area2D" parent="Sprite2D" unique_id=316239496]
+position = Vector2(-72, -96)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/Area2D24" unique_id=2103001116]
+position = Vector2(-43, 29)
+shape = SubResource("RectangleShape2D_vu5xt")
+
+[node name="Area2D25" type="Area2D" parent="Sprite2D" unique_id=960108958]
+position = Vector2(-72, -120)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/Area2D25" unique_id=270429040]
+position = Vector2(-43, 29)
+shape = SubResource("RectangleShape2D_vu5xt")
+
+[node name="Area2D26" type="Area2D" parent="Sprite2D" unique_id=1591793543]
+position = Vector2(-72, -144)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/Area2D26" unique_id=498048346]
+position = Vector2(-43, 29)
+shape = SubResource("RectangleShape2D_vu5xt")
+
+[node name="Area2D27" type="Area2D" parent="Sprite2D" unique_id=842362841]
+position = Vector2(-96, -72)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/Area2D27" unique_id=875896767]
+position = Vector2(-43, 29)
+shape = SubResource("RectangleShape2D_vu5xt")
+
+[node name="Area2D28" type="Area2D" parent="Sprite2D" unique_id=823549638]
+position = Vector2(-96, -96)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/Area2D28" unique_id=1915899714]
+position = Vector2(-43, 29)
+shape = SubResource("RectangleShape2D_vu5xt")
+
+[node name="Area2D29" type="Area2D" parent="Sprite2D" unique_id=1653431636]
+position = Vector2(-96, -120)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/Area2D29" unique_id=286872002]
+position = Vector2(-43, 29)
+shape = SubResource("RectangleShape2D_vu5xt")
+
+[node name="Area2D30" type="Area2D" parent="Sprite2D" unique_id=1575087676]
+position = Vector2(-96, -144)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/Area2D30" unique_id=1448273988]
+position = Vector2(-43, 29)
+shape = SubResource("RectangleShape2D_vu5xt")
+
+[node name="Area2D31" type="Area2D" parent="Sprite2D" unique_id=56662096]
+position = Vector2(-120, -120)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/Area2D31" unique_id=592579000]
+position = Vector2(-43, 29)
+shape = SubResource("RectangleShape2D_vu5xt")
+
+[node name="Area2D32" type="Area2D" parent="Sprite2D" unique_id=1659864446]
+position = Vector2(-120, -144)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/Area2D32" unique_id=489963820]
+position = Vector2(-43, 29)
+shape = SubResource("RectangleShape2D_vu5xt")
+
+[node name="Area2D33" type="Area2D" parent="Sprite2D" unique_id=737681235]
+position = Vector2(-120, -168)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/Area2D33" unique_id=1495181936]
+position = Vector2(-43, 29)
+shape = SubResource("RectangleShape2D_vu5xt")
+
+[node name="Area2D34" type="Area2D" parent="Sprite2D" unique_id=2141723627]
+position = Vector2(-96, -168)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/Area2D34" unique_id=795723863]
+position = Vector2(-43, 29)
+shape = SubResource("RectangleShape2D_vu5xt")
+
+[node name="Area2D35" type="Area2D" parent="Sprite2D" unique_id=2116307993]
+position = Vector2(-72, -168)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/Area2D35" unique_id=337541795]
+position = Vector2(-43, 29)
+shape = SubResource("RectangleShape2D_vu5xt")
+
+[node name="Area2D36" type="Area2D" parent="Sprite2D" unique_id=1738310550]
+position = Vector2(-48, -168)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/Area2D36" unique_id=866396315]
+position = Vector2(-43, 29)
+shape = SubResource("RectangleShape2D_vu5xt")
+
+[node name="Area2D37" type="Area2D" parent="Sprite2D" unique_id=1837645433]
+position = Vector2(-24, -168)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/Area2D37" unique_id=606829912]
+position = Vector2(-43, 29)
+shape = SubResource("RectangleShape2D_vu5xt")
+
+[node name="Area2D38" type="Area2D" parent="Sprite2D" unique_id=6384862]
+position = Vector2(-96, -192)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/Area2D38" unique_id=2035656691]
+position = Vector2(-43, 29)
+shape = SubResource("RectangleShape2D_vu5xt")
+
+[node name="Area2D39" type="Area2D" parent="Sprite2D" unique_id=902291550]
+position = Vector2(-72, -192)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/Area2D39" unique_id=1749853993]
+position = Vector2(-43, 29)
+shape = SubResource("RectangleShape2D_vu5xt")
+
+[node name="Area2D40" type="Area2D" parent="Sprite2D" unique_id=1767799379]
+position = Vector2(-48, -192)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/Area2D40" unique_id=16916838]
+position = Vector2(-43, 29)
+shape = SubResource("RectangleShape2D_vu5xt")
+
+[node name="IncorrectArea2D" type="Area2D" parent="." unique_id=935931548]
+position = Vector2(-175, -175)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="IncorrectArea2D" unique_id=948997570]
+polygon = PackedVector2Array(-175, -157, -157, -157, -157, -181, -73, -181, -73, -157, -60, -157, -60, -180, -3, -180, -3, -122, -25, -122, -25, -107, 22, -107, 22, -49, 0, -49, 0, -25, -25, -25, -25, 44, -59, 44, -59, 20, -84, 20, -84, -51, -99, -51, -99, -5, -129, -5, -129, -29, -154, -29, -154, -74, -178, -74, -178, -169, -182, -169, -182, -68, -159, -68, -159, -26, -133, -26, -133, -2, -96, -2, -96, -47, -87, -47, -87, 23, -62, 23, -62, 48, -19, 48, -19, -20, 7, -20, 7, -42, 32, -42, 32, -107, 32, -122, 5, -122, 5, -190, -65, -190, -65, -171, -68, -171, -68, -190, -166, -190, -166, -169, -175, -169)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="IncorrectArea2D" unique_id=1149510046]
+position = Vector2(-79.25, -103)
+shape = SubResource("RectangleShape2D_pgljx")
+debug_color = Color(1, 1, 1, 0.41960785)
+
+[connection signal="area_entered" from="IncorrectArea2D" to="." method="_on_area_2d_updated"]
+[connection signal="area_exited" from="IncorrectArea2D" to="." method="_on_area_2d_updated"]
