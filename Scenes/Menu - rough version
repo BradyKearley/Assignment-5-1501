@@ -38,3 +38,4 @@ func _on_back_pressed() -> void:
 	$Title.show()
 #right now back and rules still show, but when we have a main g
 #ill do a .hide() for both, that should hide them
+#also I gave each button its own image using the animated 2d sprite - works pritty well - linked the images under the images folder
