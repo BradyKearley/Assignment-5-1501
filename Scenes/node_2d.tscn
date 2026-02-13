@@ -45,3 +45,5 @@ position = Vector2(408, 400)
 position = Vector2(236, 413)
 
 [node name="Block7" parent="." unique_id=1918683852 instance=ExtResource("7_wjtap")]
+
+#get_tree().res://menu.tscn - something like this added to swap to the menu sceen
