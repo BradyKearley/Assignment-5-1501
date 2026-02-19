@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://35xtbntkucfu" path="res://Scripts/node_2d.gd" id="1_2ooml"]
 [ext_resource type="AudioStream" uid="uid://pyg4htdc1n0l" path="res://assets/SFX/victory.ogg" id="3_6whob"]
+[ext_resource type="Script" uid="uid://c62o0b32d1ecc" path="res://Scenes/Timer.gd" id="5_u7krg"]
 [ext_resource type="PackedScene" uid="uid://bwfkeicaboxmb" path="res://Scenes/box_spawner.tscn" id="8_boxsp"]
 [ext_resource type="PackedScene" uid="uid://bt3ljuscnb7j5" path="res://Scenes/conveyer.tscn" id="9_chwn1"]
 
@@ -9,18 +10,46 @@
 script = ExtResource("1_2ooml")
 
 [node name="BoxSpawner" parent="." unique_id=1873429057 instance=ExtResource("8_boxsp")]
-position = Vector2(103, 67)
+position = Vector2(119, 36)
+scale = Vector2(-7397.413, 69.606384)
+
+[node name="BoxSpawner2" parent="." unique_id=1152632426 instance=ExtResource("8_boxsp")]
+position = Vector2(1119.0001, -30.999998)
 scale = Vector2(-7397.413, 69.606384)
 
 [node name="Victory" type="AudioStreamPlayer2D" parent="." unique_id=430840254]
 stream = ExtResource("3_6whob")
 
-[node name="Conveyer" parent="." unique_id=590312361 instance=ExtResource("9_chwn1")]
-position = Vector2(-36, 38)
-scale = Vector2(36.2, 1.6799992)
-
 [node name="Conveyer2" parent="." unique_id=1417695321 instance=ExtResource("9_chwn1")]
-position = Vector2(1081.9999, 38)
+position = Vector2(1082, -83)
+rotation = 1.5707964
+scale = Vector2(29.080004, 1.6800003)
+direction = Vector2(0, 1)
+
+[node name="Conveyer3" parent="." unique_id=590312361 instance=ExtResource("9_chwn1")]
+position = Vector2(85, -5.999996)
 rotation = 1.5707964
 scale = Vector2(26.960003, 1.6800003)
 direction = Vector2(0, 1)
+
+[node name="Timer" type="Label" parent="." unique_id=1134670350]
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 177.0
+offset_top = 1.0
+offset_right = 220.0
+offset_bottom = 24.0
+grow_horizontal = 0
+grow_vertical = 0
+size_flags_horizontal = 0
+size_flags_vertical = 8
+text = "Time: 0"
+script = ExtResource("5_u7krg")
+
+[node name="Timer" type="Timer" parent="Timer" unique_id=1996102319]
+autostart = true
+
+[connection signal="timeout" from="Timer/Timer" to="Timer" method="_on_timer_timeout"]
