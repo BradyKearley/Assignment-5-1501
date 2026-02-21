@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://cfijjryw6a0i2"]
+
+[ext_resource type="Script" uid="uid://bfbrcdnliujnc" path="res://node_2d.gd" id="1_pn045"]
+[ext_resource type="Texture2D" uid="uid://c1pe10clv05l1" path="res://assets/images/southparkbezos.png" id="2_06t2w"]
+[ext_resource type="Texture2D" uid="uid://b1v16ahxwa1cv" path="res://assets/images/spb5.png" id="3_cjob5"]
+[ext_resource type="AudioStream" uid="uid://d364lauvimsxr" path="res://assets/SFX/1.ogg" id="4_vqb63"]
+[ext_resource type="AudioStream" uid="uid://cjkh034cihgfb" path="res://assets/SFX/2.ogg" id="5_nnwag"]
+[ext_resource type="AudioStream" uid="uid://cweuddyahgqje" path="res://assets/SFX/3.ogg" id="6_hq5l7"]
+
+[node name="Node2D" type="Node2D" unique_id=248588895]
+script = ExtResource("1_pn045")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1589633255]
+texture = ExtResource("2_06t2w")
+
+[node name="Sprite2D2" type="Sprite2D" parent="." unique_id=1257799463]
+visible = false
+texture = ExtResource("3_cjob5")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=516463887]
+stream = ExtResource("4_vqb63")
+
+[node name="AudioStreamPlayer2D2" type="AudioStreamPlayer2D" parent="." unique_id=1800949065]
+stream = ExtResource("5_nnwag")
+
+[node name="AudioStreamPlayer2D3" type="AudioStreamPlayer2D" parent="." unique_id=1715786749]
+stream = ExtResource("6_hq5l7")
+
+[connection signal="finished" from="AudioStreamPlayer2D" to="." method="_on_audio_stream_player_2d_finished"]
+[connection signal="finished" from="AudioStreamPlayer2D2" to="." method="_on_audio_stream_player_2d_2_finished"]
+[connection signal="finished" from="AudioStreamPlayer2D3" to="." method="_on_audio_stream_player_2d_3_finished"]

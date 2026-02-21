@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://35xtbntkucfu" path="res://Scripts/node_2d.gd" id="1_2ooml"]
 [ext_resource type="AudioStream" uid="uid://pyg4htdc1n0l" path="res://assets/SFX/victory.ogg" id="3_6whob"]
 [ext_resource type="Script" uid="uid://c62o0b32d1ecc" path="res://Scenes/Timer.gd" id="5_u7krg"]
+[ext_resource type="PackedScene" uid="uid://cfijjryw6a0i2" path="res://Scenes/bezos.tscn" id="6_tx0tn"]
 [ext_resource type="PackedScene" uid="uid://bwfkeicaboxmb" path="res://Scenes/box_spawner.tscn" id="8_boxsp"]
 [ext_resource type="PackedScene" uid="uid://bt3ljuscnb7j5" path="res://Scenes/conveyer.tscn" id="9_chwn1"]
 
@@ -51,5 +52,9 @@ script = ExtResource("5_u7krg")
 
 [node name="Timer" type="Timer" parent="Timer" unique_id=1996102319]
 autostart = true
+
+[node name="Node2D" parent="." unique_id=248588895 instance=ExtResource("6_tx0tn")]
+position = Vector2(273, 532)
+scale = Vector2(0.15, 0.15)
 
 [connection signal="timeout" from="Timer/Timer" to="Timer" method="_on_timer_timeout"]
