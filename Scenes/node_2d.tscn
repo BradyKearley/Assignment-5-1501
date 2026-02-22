@@ -4,6 +4,7 @@
 [ext_resource type="AudioStream" uid="uid://pyg4htdc1n0l" path="res://assets/SFX/victory.ogg" id="3_6whob"]
 [ext_resource type="Script" uid="uid://c62o0b32d1ecc" path="res://Scenes/Timer.gd" id="5_u7krg"]
 [ext_resource type="PackedScene" uid="uid://cfijjryw6a0i2" path="res://Scenes/bezos.tscn" id="6_tx0tn"]
+[ext_resource type="Script" uid="uid://c6lsr62ix1qr8" path="res://Scripts/progress_bar.gd" id="7_wjtap"]
 [ext_resource type="PackedScene" uid="uid://bwfkeicaboxmb" path="res://Scenes/box_spawner.tscn" id="8_boxsp"]
 [ext_resource type="PackedScene" uid="uid://bt3ljuscnb7j5" path="res://Scenes/conveyer.tscn" id="9_chwn1"]
 
@@ -60,8 +61,22 @@ offset_right = 429.0
 offset_bottom = 24.0
 text = "Shapes Completed: 0/10?"
 
+[node name="ShapesProgress" type="Label" parent="." unique_id=1470743148]
+offset_left = 500.0
+offset_top = 1.0
+offset_right = 649.0
+offset_bottom = 24.0
+text = "Shape Progress:"
+
 [node name="Node2D" parent="." unique_id=248588895 instance=ExtResource("6_tx0tn")]
 position = Vector2(273, 532)
 scale = Vector2(0.15, 0.15)
+
+[node name="ProgressBar" type="ProgressBar" parent="." unique_id=219317746 groups=["Progress"]]
+offset_left = 627.0
+offset_top = 1.0
+offset_right = 840.0
+offset_bottom = 28.0
+script = ExtResource("7_wjtap")
 
 [connection signal="timeout" from="Timer/Timer" to="Timer" method="_on_timer_timeout"]
