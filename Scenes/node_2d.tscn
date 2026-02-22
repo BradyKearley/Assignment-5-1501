@@ -53,6 +53,13 @@ script = ExtResource("5_u7krg")
 [node name="Timer" type="Timer" parent="Timer" unique_id=1996102319]
 autostart = true
 
+[node name="Shapes" type="Label" parent="." unique_id=1179140870]
+offset_left = 280.0
+offset_top = 1.0
+offset_right = 429.0
+offset_bottom = 24.0
+text = "Shapes Completed: 0/10?"
+
 [node name="Node2D" parent="." unique_id=248588895 instance=ExtResource("6_tx0tn")]
 position = Vector2(273, 532)
 scale = Vector2(0.15, 0.15)
