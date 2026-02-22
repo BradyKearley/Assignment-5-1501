@@ -7,15 +7,22 @@
 [ext_resource type="AudioStream" uid="uid://cjkh034cihgfb" path="res://assets/SFX/2.ogg" id="5_nnwag"]
 [ext_resource type="AudioStream" uid="uid://cweuddyahgqje" path="res://assets/SFX/3.ogg" id="6_hq5l7"]
 
+[sub_resource type="SpriteFrames" id="SpriteFrames_i6m0j"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_06t2w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_cjob5")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
 [node name="Node2D" type="Node2D" unique_id=248588895]
 script = ExtResource("1_pn045")
-
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1589633255]
-texture = ExtResource("2_06t2w")
-
-[node name="Sprite2D2" type="Sprite2D" parent="." unique_id=1257799463]
-visible = false
-texture = ExtResource("3_cjob5")
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=516463887]
 stream = ExtResource("4_vqb63")
@@ -25,6 +32,10 @@ stream = ExtResource("5_nnwag")
 
 [node name="AudioStreamPlayer2D3" type="AudioStreamPlayer2D" parent="." unique_id=1715786749]
 stream = ExtResource("6_hq5l7")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1531617425]
+sprite_frames = SubResource("SpriteFrames_i6m0j")
+frame_progress = 0.013946017
 
 [connection signal="finished" from="AudioStreamPlayer2D" to="." method="_on_audio_stream_player_2d_finished"]
 [connection signal="finished" from="AudioStreamPlayer2D2" to="." method="_on_audio_stream_player_2d_2_finished"]
