@@ -1,0 +1,106 @@
+[gd_scene format=3 uid="uid://cmmy07rt8wv7p"]
+
+[ext_resource type="Script" uid="uid://eva083ttxk42" path="res://menu.gd" id="1_lti8b"]
+[ext_resource type="Texture2D" uid="uid://du6asywo3awys" path="res://startbuttonTranspent.png" id="2_ouk20"]
+[ext_resource type="Texture2D" uid="uid://dby0jk3e3b6m" path="res://pngtree-rules-book-png-image_6290267.png" id="3_4hy44"]
+[ext_resource type="Texture2D" uid="uid://d0fc40m2uvi4g" path="res://Back-Button-PNG-Picture.png" id="4_ytr4m"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_mae5d"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_ouk20")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_4hy44"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_4hy44")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_l48gv"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_ytr4m")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Menu" type="CanvasLayer" unique_id=737607467]
+script = ExtResource("1_lti8b")
+
+[node name="rules" type="Label" parent="." unique_id=105699846]
+offset_left = 345.0
+offset_top = 189.0
+offset_right = 801.0
+offset_bottom = 264.0
+text = "Build the shapes in the time frame
+Take the shapes from the convarbelt to do make the shape
+Be carfull since you have a limied time to acomplish this!"
+horizontal_alignment = 1
+
+[node name="StartButton" type="Button" parent="." unique_id=1937907110]
+offset_left = 476.0
+offset_top = 485.0
+offset_right = 676.0
+offset_bottom = 585.0
+theme_override_font_sizes/font_size = 50
+text = "START"
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="StartButton" unique_id=2115143414]
+position = Vector2(100, 48)
+scale = Vector2(0.34806627, 0.41240883)
+sprite_frames = SubResource("SpriteFrames_mae5d")
+
+[node name="RulesButton" type="Button" parent="." unique_id=2044794762]
+offset_left = 510.0
+offset_top = 244.0
+offset_right = 613.0
+offset_bottom = 377.0
+theme_override_font_sizes/font_size = 50
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="RulesButton" unique_id=1032927727]
+position = Vector2(68.00006, 48.999996)
+scale = Vector2(0.6238095, 0.6429487)
+sprite_frames = SubResource("SpriteFrames_4hy44")
+
+[node name="Title" type="Label" parent="." unique_id=1486701915]
+offset_left = 442.0
+offset_top = 39.0
+offset_right = 685.0
+offset_bottom = 180.0
+theme_override_font_sizes/font_size = 50
+text = "Bezon's
+Basement"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Timer" type="Timer" parent="." unique_id=577200792]
+
+[node name="Back" type="Button" parent="." unique_id=630026241]
+offset_left = 219.0
+offset_top = 112.0
+offset_right = 321.0
+offset_bottom = 200.0
+theme_override_font_sizes/font_size = 50
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Back" unique_id=1440450924]
+position = Vector2(52.000008, 42)
+scale = Vector2(0.18680558, 0.18472227)
+sprite_frames = SubResource("SpriteFrames_l48gv")
+
+[connection signal="pressed" from="StartButton" to="." method="_on_start_buton_pressed"]
+[connection signal="pressed" from="RulesButton" to="." method="_on_rules_button_pressed"]
+[connection signal="pressed" from="Back" to="." method="_on_back_pressed"]
